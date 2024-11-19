@@ -1,4 +1,29 @@
 @font-face{
     font-family: "Dalto";
-    src: url();
+    src: url("Fonts/SourGummy-ExtraLight.ttf") format("truetype");
+    font-weight: 100;
+}
+@font-face{
+    font-family: "Dalto";
+    src: url("Fonts/SourGummy_Expanded-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Dalto";
+    src: url("Fonts/SourGummy-Bold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "Dalto";
+    src: url("Fonts/SourGummy-ExtraBold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+
+@font-face{
+    font-family: "Dalto";
+    src: url("Fonts/SourGummy-Black.ttf") format("truetype");
+    font-weight: 900;
 }

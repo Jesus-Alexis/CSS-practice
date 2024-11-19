@@ -13,16 +13,16 @@ span {
 
 p{
   color: red;
-  font-family: sans-serif;
+  font-family: 'Dalto';
   font-size: 13px;
-  font-weight:bolder;
+  font-weight: 900;
   font-style:oblique 40deg;
   /* El deg sirve para saber a cuantos grados quiero inclinar la letra. */
   text-align: justify;
   /* el valor justify hace que todas las lineas de texto queden alineadas. */
   line-height: 1.5;
   /* Line-heigth: sirve para poner los espacios entre lineas de un texto. */
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   /* La propiedad Letter-spacing, sirve para que las letras del texto se separen.  */
   text-transform: capitalize;
   /* Con la propiedad text-transform, hago que todo mi texto se vuelva mayuscala o minuscula. 
