@@ -1,5 +1,6 @@
 span {
-  color: red;
+  color: brown;
+  text-decoration: overline underline line-through;
 }
 
 .faltante {
@@ -10,3 +11,20 @@ span {
   color: green;
 }
 
+p{
+  color: red;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight:bolder;
+  font-style:oblique 40deg;
+  /* El deg sirve para saber a cuantos grados quiero inclinar la letra. */
+  text-align: justify;
+  /* el valor justify hace que todas las lineas de texto queden alineadas. */
+  line-height: 1.5;
+  /* Line-heigth: sirve para poner los espacios entre lineas de un texto. */
+  letter-spacing: 3px;
+  /* La propiedad Letter-spacing, sirve para que las letras del texto se separen.  */
+  text-transform: capitalize;
+  /* Con la propiedad text-transform, hago que todo mi texto se vuelva mayuscala o minuscula. 
+  el valor capitlize, srive para que las primeras palabras en un texto inicialicen con mayusculas.*/
+}
