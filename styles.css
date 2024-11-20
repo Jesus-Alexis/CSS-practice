@@ -28,3 +28,54 @@ p{
   /* Con la propiedad text-transform, hago que todo mi texto se vuelva mayuscala o minuscula. 
   el valor capitlize, srive para que las primeras palabras en un texto inicialicen con mayusculas.*/
 }
+
+
+/* BOX MODEL */
+
+div{
+  background: red;
+  width: 200px;
+  height: 100px;
+}
+
+.prueba{
+  width: 80%;
+  box-sizing: border-box;
+}
+
+form {
+   width: 400px;
+}
+
+.formulario{
+  background:red;
+  padding: 10px 0 40px 20px;
+/* el padding se guia por 
+las manesillas del reloj y se puede
+escribir asi o asi*/
+ padding-top: 10px;
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 20px; 
+  /* Otra forma de usar el padding es 
+  de forma verical y horizontal. */
+  padding: 10px 90px;
+}
+
+.formulario_input{
+  padding: 6px 10px;
+  width: 100%;
+  background: black ;
+  color: red;
+  margin: 10px;
+  /* Aqui lo que estoy haciendo es separar las cajas 10px entre si
+  con el uso de la propiedad margin en 10px. */
+}
+
+.formulario_submit{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: red;
+  color: white;
+  width: 50%;
+}

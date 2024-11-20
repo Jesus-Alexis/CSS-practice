@@ -37,3 +37,10 @@ Con Text decoration: puedo agregar un subrayado a mi texto en la parte inferior 
 Y con el valor none es para quitarle las lineas de subrayado a mis enlaces.
 
 La propiedad line-height: lo que hace es definirme el espaciado de las letras, entre mayor sea el numero más espacio habra entre las lineas.
+
+### Box model  Contenido, Borde y margen.
+
+la propiedad background sirve para cambiar el color de fondo de la caja div.
+la propiedad width y heigth sirven para hacer el ancho y largo de una caja en css.
+
+Padding o relleno: lo que hace es aumentar el tamaño que hay dentro de la caja osea el contenido.
