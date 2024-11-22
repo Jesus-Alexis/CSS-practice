@@ -183,7 +183,14 @@ h3{
   border: 10px solid black;
 }
 
+/* Colores. */
 
+.box2{
+  width: 100px;
+  background: hsla(hue, saturation, lightness, alpha);
+  height: 100px;
+  margin: 20px;
+}
 
 
 

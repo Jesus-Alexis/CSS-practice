@@ -44,3 +44,25 @@ la propiedad background sirve para cambiar el color de fondo de la caja div.
 la propiedad width y heigth sirven para hacer el ancho y largo de una caja en css.
 
 Padding o relleno: lo que hace es aumentar el tamaño que hay dentro de la caja osea el contenido.
+
+## Formas de dar un color en css
+
+1. Exadecimal, Exadecimal y alpha.
+2. RGB , RGBA.
+3.HCL, HCLA.
+
+El sistema de base hexadecimal es de 16 en adelante y hay más posibilidad de usar distintos colores.
+Es una representación del rgb pero más corta.
+#00 el primer numero despues del # es el rojo en este caso el (00).
+#00ff las letras representan el color verde en el rgb en este caso el(ff).
+#00ff00 los ultimos numeros representan al color azul, en este caso es el (00).
+El sistema hexadecimal se maneja asi.
+0
+1 6 a
+2 7 b
+3 8 c
+4 9 d
+5   f
+
+Cuando los datos aparecen con la letra significa que es la saturación del color,
+osea que si quiero que se vea más oscuro o más claro.
