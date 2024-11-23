@@ -1,3 +1,7 @@
+html {
+  font-size: 30px;
+}
+
 .decoracion {
   color: brown;
   text-decoration: overline underline line-through;
@@ -219,13 +223,16 @@ RED, GREEN, BLUE */
 
 /*Unidades de medida.  */
 
+/* Este es mi elemento padre osea mi elemento div*/
 .Unidades {
   background: #ededed;
   padding: 0.2in;
   font-family: sans-serif;
   border-left: 2px solid #999;
+  font-size: 14px;
 }
 
+/* Este es otro elemento hijo dentro de mi div */
 .notificacion {
   margin: 0;
   font-size: 20px;
@@ -237,6 +244,14 @@ RED, GREEN, BLUE */
   font-weight: 100;
 }
 
-.text{
+/* Este es mi elemento hijo osea todo lo que se encuantra dentro del div */
+.text {
   color: #555;
+  /* La unidad de medidad multiplica lo que contiene el elemento padre osea en este
+  caso el font-size es de 20px y multiplicado por 2 es igual a 40px */
+  /* font-size: 2em; */
+
+  /* la unidad de medidad rem busca al elemento raiz en este caso el html y lo multiplica 
+   en este caso el html mide 30px y lo multiplica po 2 que es igual a 60px*/
+  /* font-size: 2rem; */
 }

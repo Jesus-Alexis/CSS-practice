@@ -86,3 +86,19 @@ Tambien se utiliza para definir pantalas tactiles.
 ## Unidades Relativas 
 Es una unidad que depénde de otro valor.
 el valor de la unidad depende de otro valor. 
+
+### Porcentajes
+ Cuando se usan % porcentajes, se refiere a que estan ocupando un porcentaje de la caja en la pagina web. 
+ Los porcentajes definen algo respecto al tamaño contenedor, en pocas palabras los porcentajes son digamos 400px equivale a mi 100% y 40px equivale a mi 10% de los 400px.
+ Los porcentajes son una medida relativa. 
+ Normalmente los porcentajes se utilizan para los textos.
+
+ ### em 
+ Un em va a valer lo mismo que el font-size del elemento padre.
+
+ Digamos que el elemento padre mide 40px entonces si a mi elemento hijo le coloco un 1em su medida sera la misma que la del padre osea 40px.
+
+ Y si aumento a 2em mi elemento hijo valdra el doble que el elemento padre en este caso valdra 80px. 
+
+ ### rem 
+ el elemento rem hace lo mismo que el elemento padre con la unica diferencia que el elemento buscara el elemento de la raiz. Osea el elemento que contenga mi html.
