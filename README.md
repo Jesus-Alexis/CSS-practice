@@ -102,3 +102,12 @@ el valor de la unidad depende de otro valor.
 
  ### rem 
  el elemento rem hace lo mismo que el elemento padre con la unica diferencia que el elemento buscara el elemento de la raiz. Osea el elemento que contenga mi html.
+
+ ### vh y vw 
+vh y vw es la unidad de medida que se ocupa para que ocupe el ancho y alto de la pantalla en la que me encuentre.
+
+### vmax y vmin
+las unidades de medida vmax hace una comparación del heigt y el width, me dara el más grande de los dos. 
+y el vmin hace la comparación igual y me dara el menor de los dos.
+
+## Fondos

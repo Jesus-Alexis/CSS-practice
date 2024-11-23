@@ -230,12 +230,20 @@ RED, GREEN, BLUE */
   font-family: sans-serif;
   border-left: 2px solid #999;
   font-size: 14px;
+  /* El vh y vw se usa para medir al ancho y el alto que mide la pantalla. Esto es muy 
+  util para edicion responsiva.  Se adapta al tamaño de la pantalla.*/
+  width: 80vw;
+  height:80vw;
+  margin:0;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10vh;
 }
 
 /* Este es otro elemento hijo dentro de mi div */
 .notificacion {
   margin: 0;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .mesage {
