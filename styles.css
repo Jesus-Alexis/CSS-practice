@@ -1,4 +1,4 @@
-span {
+.decoracion {
   color: brown;
   text-decoration: overline underline line-through;
 }
@@ -11,12 +11,12 @@ span {
   color: green;
 }
 
-.parrafos{
+.parrafos {
   color: red;
-  font-family: 'Dalto';
+  font-family: "Dalto";
   font-size: 13px;
   font-weight: 900;
-  font-style:oblique 40deg;
+  font-style: oblique 40deg;
   /* El deg sirve para saber a cuantos grados quiero inclinar la letra. */
   text-align: justify;
   /* el valor justify hace que todas las lineas de texto queden alineadas. */
@@ -29,49 +29,48 @@ span {
   el valor capitlize, srive para que las primeras palabras en un texto inicialicen con mayusculas.*/
 }
 
-
 /* BOX MODEL */
-.Titulo{
+.Titulo {
   background: red;
   width: 200px;
   height: 100px;
 }
 
-.prueba{
+.prueba {
   width: 80%;
   box-sizing: border-box;
 }
 
 form {
-   width: 400px;
+  width: 400px;
 }
 
-.formulario{
-  background:red;
+.formulario {
+  background: red;
   padding: 10px 0 40px 20px;
-/* el padding se guia por 
+  /* el padding se guia por 
 las manesillas del reloj y se puede
 escribir asi o asi*/
- padding-top: 10px;
+  padding-top: 10px;
   padding-bottom: 0;
   padding-left: 40px;
-  padding-right: 20px; 
+  padding-right: 20px;
   /* Otra forma de usar el padding es 
   de forma verical y horizontal. */
   padding: 10px 90px;
 }
 
-.formulario_input{
+.formulario_input {
   padding: 6px 10px;
   width: 100%;
-  background: black ;
+  background: black;
   color: red;
   margin: 10px;
   /* Aqui lo que estoy haciendo es separar las cajas 10px entre si
   con el uso de la propiedad margin en 10px. */
 }
 
-.formulario_submit{
+.formulario_submit {
   letter-spacing: 2px;
   text-transform: uppercase;
   background: red;
@@ -80,34 +79,34 @@ escribir asi o asi*/
 }
 
 /* Ejercicio para crear una tarjeta en css. */
-article{
+article {
   background-color: black;
   font-family: sans-serif;
   color: white;
   height: 200px;
 }
 
-.card{
-  background:coral;
+.card {
+  background: coral;
   text-align: center;
   width: 400px;
   margin: auto;
   margin-top: 20px;
 }
 
-h2{
+h2 {
   padding-top: 10px;
   font-size: 22px;
   margin: 0;
 }
 
-h3{
+h3 {
   font-size: 14px;
   font-weight: 100;
   letter-spacing: 2px;
 }
 
-.parrafo2{
+.parrafo2 {
   font-size: 9px;
   padding: 20px;
   background-color: lightcoral;
@@ -115,14 +114,14 @@ h3{
 }
 
 /* Como usar los bordes en box model en css. */
-.bordes{
-  background:red;
+.bordes {
+  background: red;
   width: 200px;
   margin: auto;
   text-align: center;
 }
 
-.bordes{
+.bordes {
   border-width: 3px;
   border-color: green;
   /* la propiedad border style modifica el estilo de mis bordes en la tarjeta */
@@ -143,40 +142,39 @@ h3{
   border-bottom-right-radius: 10px;
 }
 
-.formular{
+.formular {
   background-color: black;
 }
 
-.cuadros{
+.cuadros {
   margin: 5px;
   padding: 6px 9px;
   border: none;
   border-bottom: 1px solid greenyellow;
   border-radius: 5px;
   background: transparent;
-  color: greenyellow
+  color: greenyellow;
 }
 
 /* Tamaño de las cajas */
 
-.cajas{
+.cajas {
   margin: 0;
 }
 
-.box{
+.box {
   width: 100px;
   height: 100px;
   background: #48e;
-  margin: 10px
+  margin: 10px;
 }
 
-
-.box-default{
+.box-default {
   padding: 25px;
   border: 10px solid black;
 }
 
-.box-new{
+.box-new {
   /* la propiedad box-sizing es para utilizar el calculo de tamaño de caja */
   box-sizing: border-box;
   padding: 25px;
@@ -184,13 +182,61 @@ h3{
 }
 
 /* Colores. */
-
-.box2{
+/* RGB
+RED, GREEN, BLUE */
+.box1 {
   width: 100px;
-  background: hsla(hue, saturation, lightness, alpha);
+  height: 100px;
+  margin: 20px;
+  background: rgba(86, 172, 135, 0.8);
+}
+
+/* Hexadecimal */
+.box2 {
+  width: 100px;
+  /* El primer numero o letra reperesenta el color rojo
+  el segundo numero representa al color verde y el 
+  ultimo numero o letra representa el color azul. 
+  y el ultimo numero respresenta la opaciddad en la que puedo mostrar el
+  color.*/
+  background: #0bd9;
   height: 100px;
   margin: 20px;
 }
 
+/* hsl */
+.box3 {
+  padding: 50px 50px;
+  background: hsl(210, 40%, 85%);
+  margin: 20px;
+  margin-left: 100px;
+  text-align: center;
+  color: hsl(210, 40%, 35%);
+  border-top: 2px solid hsl(210, 40%, 45%);
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
+/*Unidades de medida.  */
 
+.Unidades {
+  background: #ededed;
+  padding: 0.2in;
+  font-family: sans-serif;
+  border-left: 2px solid #999;
+}
+
+.notificacion {
+  margin: 0;
+  font-size: 20px;
+}
+
+.mesage {
+  color: #999;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.text{
+  color: #555;
+}

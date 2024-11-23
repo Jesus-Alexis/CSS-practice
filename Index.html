@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-  <link>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica de CSS</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fonts.css"/>
+    <link rel="stylesheet" href="fonts.css" />
   </head>
   <body>
     <h1>Practicando CSS</h1>
-    <hr>
+    <hr />
     <h2>Selectores de texto</h2>
-    <h2>Ingredientes</h3>
+    <h3>Ingredientes</h3>
     <ul>
-        <li> Una taza de <span>Harina</span></li>
-        <!-- La etiqueta span me sirve mucho para poder separar elementos y asignarles
+      <li>Una taza de <span class="decoracion">Harina</span></li>
+      <!-- La etiqueta span me sirve mucho para poder separar elementos y asignarles
          distintos estilos.  -->
-        <li class="faltante">Aceite</li>
-        <li>Leche</li>
-        <li class="faltante">Sal</li>
-        <li id="ingrediente-secreto">Levadura</li>
-        <h3>Propiedades de texto</h3>
-        <p class="parrafos">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-          Perspiciatis assumenda <span> dolor id quas </span> harum provident alias quasi. Dignissimos id et eaque laboriosam reiciendis, 
-          iste harum vitae nulla commodi laborum officiis.</p>
+      <li class="faltante">Aceite</li>
+      <li>Leche</li>
+      <li class="faltante">Sal</li>
+      <li id="ingrediente-secreto">Levadura</li>
+      <h3>Propiedades de texto</h3>
+      <p class="parrafos">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+        assumenda <span class="decoracion"> dolor id quas </span> harum provident alias quasi.
+        Dignissimos id et eaque laboriosam reiciendis, iste harum vitae nulla
+        commodi laborum officiis.
+      </p>
     </ul>
-    <hr>
+    <hr />
     <h2>Box model</h2>
     <h3>Width y Heigth</h3>
     <div class="Titulo"><h2>Titulo</h2></div>
     <form action="">
-      <input class="prueba" type="text" placeholder="email">
-      <input class="prueba" type="password" placeholder="contraseña">
-      <input class="prueba" type="submit" value="iniciar Sesion">
+      <input class="prueba" type="text" placeholder="email" />
+      <input class="prueba" type="password" placeholder="contraseña" />
+      <input class="prueba" type="submit" value="iniciar Sesion" />
     </form>
     <h3>Padding y ejercicio de cards.</h3>
     <form class="formulario">
-      <input  class="formulario_input" type="email" placeholder="email">
-      <input  class="formulario_input" type="password" placeholder="contraseña">
+      <input class="formulario_input" type="email" placeholder="email" />
+      <input
+        class="formulario_input"
+        type="password"
+        placeholder="contraseña"
+      />
       <!-- para agregare una clase especial a mi html solo separo la primera clase de
        la segunda. -->
-      <input  class="formulario_input formulario_submit" type="submit" value="Enviar">
+      <input
+        class="formulario_input formulario_submit"
+        type="submit"
+        value="Enviar"
+      />
     </form>
     <article>
       <div class="card">
         <h2>Alexis</h2>
         <h3>Programador y desarrollador web</h3>
-        <p class="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Ad maiores nemo odio fugiat omnis repudiandae odit dolor hic, 
-          illum, nobis quidem cumque ex voluptatum natus corrupti placeat 
-          iusto earum libero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Amet pariatur voluptate, ratione cumque facere quia ab qui sit explicabo corrupti, 
-          deleniti deserunt, ullam tempora aliquid odio. Mollitia iste eaque ipsa!</p>
-        </div>
-      </article>
-    <br><br><br><br><br><br>
-    <hr>
+        <p class="parrafo2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores
+          nemo odio fugiat omnis repudiandae odit dolor hic, illum, nobis quidem
+          cumque ex voluptatum natus corrupti placeat iusto earum libero. Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Amet pariatur
+          voluptate, ratione cumque facere quia ab qui sit explicabo corrupti,
+          deleniti deserunt, ullam tempora aliquid odio. Mollitia iste eaque
+          ipsa!
+        </p>
+      </div>
+    </article>
+    <br /><br /><br /><br /><br /><br />
+    <hr />
     <h2>Bordes</h2>
-    <div class="bordes">
-      HOLA
-    </div>
+    <div class="bordes">HOLA</div>
     <div class="formular">
-      <input  class="cuadros" type="email" placeholder="email">
-      <input  class="cuadros" type="password" placeholder="password">
+      <input class="cuadros" type="email" placeholder="email" />
+      <input class="cuadros" type="password" placeholder="password" />
     </div>
-    <hr>
+    <hr />
     <h2>Tamaño de la caja</h2>
     <div class="cajas">
       <div class="box box-default"></div>
       <div class="box box-new"></div>
     </div>
-    <hr>
+    <hr />
     <h2>Colores</h2>
-    <div class="box2"></div>
-    </body>
+    <div>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3">TEXTO</div>
+    </div>
+    <hr />
+    <div class="Unidades">
+      <h2 class="notificacion">Has recibido un mensaje <span class="mesage">(hace un momento)</span></h2>
+      <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum ratione
+        distinctio inventore laborum totam eligendi rem unde quaerat magnam
+        aspernatur libero architecto eveniet doloremque sequi, voluptatum
+        officia debitis rerum blanditiis?
+      </p>
+    </div>
+  </body>
 </html>

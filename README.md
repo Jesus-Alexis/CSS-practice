@@ -66,3 +66,23 @@ El sistema hexadecimal se maneja asi.
 
 Cuando los datos aparecen con la letra significa que es la saturación del color,
 osea que si quiero que se vea más oscuro o más claro.
+
+## Unidades de medidas 
+
+### Pixeles
+Los pixeles son el area de medida más pequeña, que se encuentra en la pantalla de,
+mi dispositivo. Se usa normalmente para definir el tamaño de algunos elementos. 
+Como por ejemplo el alto y el ancho de las imagenes. También el tamño de los textos osea la tipografia. Támbien se usan en los margenes y en los paddings (Rellenos).
+
+Los pixeles son unidades de medida absolutas, son ideales cuando nececitamos tener control y ser presisos. 
+
+### Pt
+Es la unidad de medida que se usa para las impresiones. 
+
+### Cm (centimetros), mm(mimilimetros), in(pulgadas) 
+Estas son formas de medir para cosas que seran aplicadas a la vida real, digams se usan estas unidades de medida para el diseño de distintas cosas.
+Tambien se utiliza para definir pantalas tactiles.
+
+## Unidades Relativas 
+Es una unidad que depénde de otro valor.
+el valor de la unidad depende de otro valor. 
