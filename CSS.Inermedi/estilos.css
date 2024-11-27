@@ -1,0 +1,19 @@
+img[src^="imagen"]{
+    /* ^ signo circunflejo es 
+    inicia con...*/
+    width: 100%;
+}
+
+img[src$="png"]{
+    /* El signo de dolar $ es termina
+    con...*/
+    width: 100%;
+}
+
+ul strong{
+    /* Aqui le estoy diciendo 
+    al navegador que le de estilos
+    unicamente a los li que se encuentren
+    dentro de un ul. */
+    color: red;
+}
