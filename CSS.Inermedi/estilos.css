@@ -1,19 +1,60 @@
+/* SELECTOR DE ATRIBUTO */
 img[src^="imagen"]{
     /* ^ signo circunflejo es 
-    inicia con...*/
+    inicia con... Srive para aquellos
+    elementos que inicien con esa palabra*/
     width: 100%;
 }
 
 img[src$="png"]{
     /* El signo de dolar $ es termina
-    con...*/
+    con... Sirve para los elementos que
+    terminen con .png o .com, etc.*/
     width: 100%;
 }
 
-ul strong{
+/* SELECTOR DECSENDIENTE */
+
+ul li{
     /* Aqui le estoy diciendo 
     al navegador que le de estilos
     unicamente a los li que se encuentren
     dentro de un ul. */
-    color: red;
+    color: #444;
+}
+
+/* SELECTOR POR HIJO DIRECTO*/
+
+li > em {
+  /* El signo > es para decirle
+a css que aplique el estilo a un
+hijo directo. de mis elementos. En
+Html */  color:red
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+h3 + p + p + ul {
+    /* Aqui se aplica el estilo 
+    al elemento que sigue inmediatamente
+    al anterior */
+    background-color: #0899;
+}
+
+/* SELECTOR DE HERMANOS GENERALES. */
+h3 ~ p{
+    /* Aqui se aplican los estilos
+    a todos mis elementos que vengan despúes
+    de mi h3 en este caso por que los 
+    p son hermanos generales de mi elemento 
+    h3 */
+    color: blue;
+}
+
+img ~ h2{
+    text-transform: uppercase;
+}
+
+/* SELECTOR MULTIPLE */
+h1, li{
+    color:brown;
 }
