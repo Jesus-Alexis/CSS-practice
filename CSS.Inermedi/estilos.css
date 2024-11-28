@@ -1,3 +1,7 @@
+.selectores{
+    color:#900;
+}
+
 /* SELECTOR DE ATRIBUTO */
 img[src^="imagen"]{
     /* ^ signo circunflejo es 
@@ -57,4 +61,50 @@ img ~ h2{
 /* SELECTOR MULTIPLE */
 h1, li{
     color:brown;
+}
+
+/* PSEUDOELEMENTOS */
+
+.pseudo{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+
+/* Cuando pasamos el mouse por enzima del h2 con
+clase .pseudo */
+.pseudo:hover{
+    /* La palabra clave hover me
+    permite seleccionar un estado especifico 
+    en mi elemento. */
+    color: #000;
+    background-color: #ccc;
+}
+
+h3{
+    color:#83bb;
+}
+
+/* La pseudoclase se activa cuando presionamos
+el elemento con el mouse. */
+h3:active{
+    background-color: #999;
+    color: #fff;
+}
+
+/* Seleccionando el primer li */
+li:first-child{
+color: red;
+}
+/* Esto lo que hace es darle un color
+a mi segundo elemento li. */
+.pseudoclase:ntc-child(2){
+color: #0f0;
+}
+
+/* Seleccionando el ultimo elemento del 
+li */
+li:last-child{
+    color:#00f;
 }
