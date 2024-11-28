@@ -1,0 +1,23 @@
+/* CSS le da más propiedad al elemento
+que esta más especificado en este caso
+como el h1 tiene la clase .titulo
+se le asigno el valor de red debido a que 
+es un selección más especifica. */
+
+#titulo {
+    /* Este tiene un nivel de especificidad
+    de 100 */
+color: green;
+}
+
+.titulo{
+    /* Este tiene un nivel de especificidad
+    de nivel 10 */
+    color: red;
+}
+
+h1{
+    /* Este tiene un nivel de especificidad
+    de 1 */
+    color: blue;
+}
