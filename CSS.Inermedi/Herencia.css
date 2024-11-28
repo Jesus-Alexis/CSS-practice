@@ -1,0 +1,39 @@
+
+/* HERENCIA */
+body{
+    color: blue;
+}
+
+div{
+    font-family: sans-serif;
+    color: red;
+}
+
+div > h3{
+    color: green;
+}
+
+h1{
+    /* La propiedad inherent
+    se ocupa para que el elemento
+    seleccionado tome el atributo
+    del padre en este caso el color 
+    cafe del elemento div */
+    color: inherit;
+}
+
+h2{
+    /* la propiedad initial le da el
+    color inicial que tenia mi elemento
+    por defecto  */
+    color: initial;
+    font-family: initial;
+}
+
+h3{
+    /* La propiedad Unset restablecer al 7
+    valor inicial se va a comportar como
+    inherit y si no lo deja con
+    el valor initial */
+    color:unset;
+}
