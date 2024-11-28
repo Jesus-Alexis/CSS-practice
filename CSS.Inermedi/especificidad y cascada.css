@@ -14,10 +14,29 @@ color: green;
     /* Este tiene un nivel de especificidad
     de nivel 10 */
     color: red;
+
+}
+body .titulo{
+    /* Este tiene un nivel de especificidad
+    de nivel 10 */
+    color: red !important;
 }
 
 h1{
     /* Este tiene un nivel de especificidad
     de 1 */
-    color: blue;
+    color: blue !important;
+    /* La regla !important sirve para 
+    que le de toda la importancia 
+    directamente a ese elemento. */
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+    color:#000b;
 }
