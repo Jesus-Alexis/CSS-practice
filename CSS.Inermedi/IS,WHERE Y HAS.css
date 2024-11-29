@@ -1,26 +1,44 @@
 section .elemento1,
 section .elemento2,
-section .elemento3{
-     color: red;
+section .elemento3 {
+  color: red;
 }
 
 /* LA PSEUDOCLASE LO QUE HACE ES AGRUPAR LOS
 ELEMENTOS DE UNA SECCIÓN ESPECIFICA */
-section :is(.elemento1, .elemento2, .elemento3){
-    color: blue;
+section :is(.elemento1, .elemento2, .elemento3) {
+  color: blue;
 }
 /* LA PSEUDOCLASE WHERE SOLO CAMBIA LA
 ESPECIFICIDAD DE MI ELEMENTO  */
-section :where(.elemento1, .elemento2, .elemento3){
-    color: green;
+section :where(.elemento1, .elemento2, .elemento3) {
+  color: green;
 }
 
 /* LA PSEUDOCLASE HAS SIRVE
 SI TIENE LA CLASE ELEMENTO1
 SINO NO UTILIZA SUS ESTILOS */
-ul:has(+div){
-    background-color: black;
-    color: #fff;
+ul:has(+ div) {
+  background-color: black;
+  color: #fff;
 }
 
 
+/* HAS  */
+div{
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+
+label:has(input:valid) {
+  color: green;
+}
+
+label:has(input:invalid) {
+  color: red;
+}
