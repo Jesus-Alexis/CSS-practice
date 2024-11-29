@@ -93,18 +93,91 @@ h3:active{
     color: #fff;
 }
 
+
+ul{
+    background-color: #999;
+    padding: 0;
+}
+
 /* Seleccionando el primer li */
-li:first-child{
+ ul li:first-child{
 color: red;
 }
 /* Esto lo que hace es darle un color
 a mi segundo elemento li. */
-.pseudoclase:ntc-child(2){
+ul > li:nth-child(2n){
 color: #0f0;
+background-color: #ccc;
+padding: 5px;
+}
+
+/* Esta pesudoclase ntc-of-type solo me cuenta
+en este caso los li */
+li:nth-of-type(2){
+    color: brown;
 }
 
 /* Seleccionando el ultimo elemento del 
 li */
 li:last-child{
     color:#00f;
+}
+/* Seleccionando los li dentro de ".lista"
+pero que no tengan la clase ".excluir" */
+.lista li:not(.excluir){
+    color: #900;
+}
+
+
+div{
+    border: 2px solid #000;
+}
+
+
+/* La pseudoclase empity sirve
+para que en caso de que mi div o algun
+elemento que incluya este vacio.
+se le coloca un estilo */
+div:empty{
+    border:none;
+}
+
+/* root es una pseudoclase que
+selecciona al elemento raiz */
+/* :root {
+} */
+
+
+/* SELECCIONANDO ENLACES NO VISITADOS */
+a:link{
+    color: red;
+}
+
+input[type="checkbox"]{
+    margin: 50px;
+}
+
+
+/* SELECCIONANDO ENLACES VISITADOS */
+a:visited{
+    color:green
+}
+
+
+
+input[type="checkbox"]:checked{
+    margin: 0;
+}
+
+
+/* SELECCIONANDO INPUTS VALIDOS */
+input[type="email"]:invalid{
+    background-color: #444;
+    color: #ccc;
+}
+
+/* SELECCIONANDO INPUTS INVALIDOS */
+input[type="email"]:valid{
+    background-color: #48e;
+    color: greenyellow;
 }
