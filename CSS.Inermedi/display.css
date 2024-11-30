@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+div{
+    padding: 20px;
+    background-color: #999;
+}
+
+/* DISPLAY BLOCK */
+.enlace__item{
+    background-color: red;
+    color: #fff;
+    /* Con la propiedad display block
+    le estoy diciendo al navegador
+    que utilice todo el ancho disponible. */
+    display: block;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* DSIPLAY INLINE */
+p{
+    background-color: #000;
+    color: #fff;
+    display:inline;
+    margin: 5px;
+}
+
+
+/* DISPLAY INLINEBLOCK */
+.nav{
+    background-color: #48e;
+}
+
+.nav__list{
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav__link:hover{
+    background-color: #59e;
+}
+
+.link--buttom{
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 6px 18px;
+    color: #48e;
+    border-radius: 3px;
+    margin-left: 60px;
+}
+
+.link--buttom:hover{
+    background: transparent;
+    color: #fff;
+}
