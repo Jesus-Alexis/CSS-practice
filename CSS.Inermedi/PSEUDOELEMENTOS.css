@@ -1,3 +1,58 @@
 div{
     padding: 20px;
 }
+
+/* El pseudoelemento first letter
+seleecciona la primera letra */
+h1::first-letter{
+    color: red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+
+/* Con el pseudoelemento first line 
+solo se va a modificar la primer linea
+de mi elemento seleccionado. */
+div::first-line{
+    color: red;
+    font-weight: bold;
+}
+
+/* El psuedoelemento secction
+sirve para que al pasar el mouse
+por el texto se pueda cambiar de 
+color  */
+div::selection{
+    background-color: red;
+    color: white;
+}
+
+/* Con el pseudoelemento pleacholder
+se puede modificar el placeholder 
+de mi input en el archivo de html. */
+input::placeholder{
+    color:#943 ;
+    background-color:#999f;
+}
+
+/* El pseudoelemento marker sirve
+para cambiar el color de los puntos
+o cuadros que haya en una lista desordenada */
+li::marker{
+    color: red;
+}
+
+/* El pseudoelmento before
+sirve para colocar algun texto
+antes de lo que haya colocado 
+en mi elemento principal y no se
+puede seleccionar. */
+li::before{
+    content: 'Antes';
+    color: #f80d;
+}
+
+li::after{
+content: 'Despues';
+    color: #80d;
+}
