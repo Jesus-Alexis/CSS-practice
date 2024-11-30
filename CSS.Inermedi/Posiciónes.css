@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.contenedor{
+    border: 2px solid #000;
+    margin: 0px;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    /* La propiedad position relative
+    es para moverlo en cualquier
+    lugar dentro de un lugar determinado */
+    position: relative;
+    z-index: 10;
+}
+
+.box--blue{
+    background-color:blue;
+    /* SOLO SE NECESITA RIGTH Y LEFT */
+    top:5px;
+    left: 20px;
+    /* LA propiedad z index me permite 
+    mover la caja adelante o atras */
+    z-index: 20;
+}
+
+.box--red{
+    top: 5px;
+    left: 40px;
+    background-color: red;
+    z-index: 30;
+}
+
+
+
+/* Posición ABSILUTA */
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #db7;
+    color: #fff;
+}
+
+
+.box--one{
+    background-color: #37d;
+    position: absolute;
+}
+
+.box--two{
+    background-color: #f64;
+}
