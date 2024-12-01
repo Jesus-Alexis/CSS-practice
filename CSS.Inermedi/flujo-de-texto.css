@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #fff;
+    border: 1px solid #0006;
+    /* PROPIEDAD WHITE SPACE */
+    white-space: nowrap;
+    /* La propiedad white space define como 
+    se comportan los espacios en blanco y los
+    saltos de linea*/
+    /* PROPIEDAD TEXTOVERFLOW*/
+    text-overflow:ellipsis;
+    /* el valor elipsis sirve para que si
+    el texto esta apunto de desbordarse lo 
+    ponga con tres puntos... */
+    overflow: hidden;
+    word-wrap: anywhere;
+    /* LA PROPIEDAD TEXT-WRAP */
+    text-wrap: pretty;
+    /* el valor pretty sirve para 
+    balancear el texto y que no queden 
+    palabras solas. */
+}
+
+h1{
+    text-wrap: pretty;
+}
+
+
+
+
+
+
+
+
+
+
+
