@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #ededed;
+    background-color: #ccc;
     font-family: sans-serif;
     text-align: center;
 }
@@ -8,7 +8,8 @@ body{
 
 .contenedor{
     border: 2px solid #000;
-    margin: 0px;
+    margin: 20px;
+    background-color: #fff;
 }
 
 
@@ -49,12 +50,13 @@ body{
     height: 100px;
     background-color: #db7;
     color: #fff;
+    z-index: 10;
 }
 
 
 .box--one{
-    background-color: #37d;
     position: absolute;
+    background-color: #37d;
 }
 
 .box--two{
