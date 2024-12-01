@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+img{
+    width: 200px;
+    height: 600px;
+    /* PROPIEDAD OBJECT FILL */
+    object-fit: contain;
+    /* PROPIEDAD OBJECT POSITION */
+    object-position:right;
+    border: 2px solid #000;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* La propiedad object fill hace
+    que la imagen se adapte al ancho y al alto 
+     */
+}
+
+
