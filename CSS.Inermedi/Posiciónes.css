@@ -6,11 +6,6 @@ body{
 }
 
 
-.contenedor{
-    border: 2px solid #000;
-    margin: 20px;
-    background-color: #fff;
-}
 
 
 .box{
@@ -45,6 +40,14 @@ body{
 
 
 /* Posición ABSILUTA */
+.contenedor{
+    border: 2px solid #000;
+    margin: 20px 50px;
+    background-color: #fff;
+    position: relative;
+}
+
+
 .box2{
     width: 100px;
     height: 100px;
@@ -57,8 +60,12 @@ body{
 .box--one{
     position: absolute;
     background-color: #37d;
+    top: 40px;
+    margin: auto;
 }
 
 .box--two{
     background-color: #f64;
+    position: relative;
+    z-index: 30;
 }
