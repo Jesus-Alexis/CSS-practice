@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box{
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    /* ESTAS SON LAS TRNASICIONES QUE SE PUEDEN APLICAR A MI
+    ELEMENTO EN HTMl */
+    transition: left 1s cubic-bezier(.67,.57,.05,.69);
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.67,.57,.05,.69);
+    color: #f00;
+    transition-property: background-color,left ;
+    position: relative;
+    left: 0;
+}
+/*     transition-delay: 2s; 
+esta transiscion sirve para que transicione cada 2segundos o menos */
+
+body:hover .box{
+    left: 400px;
+}
