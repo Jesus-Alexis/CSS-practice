@@ -3,12 +3,31 @@ body{
     font-family: sans-serif;
 }
 
+/* SPACE-BETWEN */
 .flexbox{
-    /* FLEX-FLOW */
     display: flex;
     flex-flow: row wrap;
     border: 2px solid #000;
     margin: 20px;
+    justify-content:space-between;
+}
+
+/* SAPCE-AROUND */
+.flexbox2{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content:space-around;
+}
+
+/* SAPCE-evenly*/
+.flexbox3{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content:space-evenly;
 }
 
 .flex-item{
