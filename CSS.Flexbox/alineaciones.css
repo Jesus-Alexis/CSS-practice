@@ -15,7 +15,7 @@ body{
 /* SAPCE-AROUND */
 .flexbox2{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     border: 2px solid #000;
     margin: 20px;
     justify-content:space-around;
@@ -30,6 +30,17 @@ body{
     justify-content:space-evenly;
 }
 
+/* Aling items */
+.flexbox4{
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content:space-evenly;
+    align-items: baseline;
+    height: 360px;
+}
+
 .flex-item{
     background-color: #800;
     margin: 10px;
@@ -42,8 +53,10 @@ body{
 
 .flex-item:first-child{
     background-color: #f77;
+    font-size: 60px;
 }
 
 .flex-item:last-child{
     background-color: #000;
+    font-size: 80px;
 }
