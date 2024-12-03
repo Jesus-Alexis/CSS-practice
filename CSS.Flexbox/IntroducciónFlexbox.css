@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox{
+    /* La propiedad desplay flex hace que los
+    elementos que se encuentran dentro de mi caja se 
+    vuelvan automaticamente flexibles */
+    display: flex;
+    /* La propiedad flex direction sirve para darle
+    dirección a los elementos ya sea de izquierda 
+    a derecha con el valor (row) o de derecha a izquierda con el valor 
+    (row-reverse) */
+    flex-direction: row;
+}
+
+.flexbox2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flexbox3{
+    display: flex;
+    flex-direction: column;
+    /* Con el valor column los elementos se direccionan
+    de arriba hacia abajo */
+}
+
+.flexbox4{
+    display: flex;
+    flex-direction: column-reverse;
+    /* Con el valor column los elementos se direccionan
+    de arriba hacia abajo */
+}
+
+.flex-item{
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.flex-item:first-child{
+    background-color: #f77;
+}
+
+.flex-item:last-child{
+    background-color: #000;
+}
