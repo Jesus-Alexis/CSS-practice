@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div,body{
+    box-sizing: border-box;
+}
+
+
+.flexbox{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content:space-between;
+}
+
+.flex-item:first-child{
+    background-color: #f77;
+    font-size: 40px;
+    /* Con la propiedad order puedo cambiar el orden
+    de los elementos dentrro de un caja */
+    order: 3;
+}
+
+.flex-item{
+    background-color: #800;
+    margin: 20px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    width: 150px;
+    order: 1;
+}
+
+
+.flex-item:last-child{
+    background-color: #000;
+    font-size: 40px;
+    order: 2;
+}
