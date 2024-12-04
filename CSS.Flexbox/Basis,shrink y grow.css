@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+p{
+    font-size: 20px;
+}
+
+div,body{
+    box-sizing: border-box;
+}
+
+
+.flexbox{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.flex__item:first-child{
+    background-color: #f77;
+    flex-grow: 3;
+}
+
+.flex__item{
+    background-color: #800;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    width: 100px;
+    flex-grow: 1;
+}
+
+.flex__item:last-child{
+    background-color: #000;
+    /* Con la propiedad flex grow
+    estoy asiganndole los espacios que quiero
+    que ocupe ese elemento en mi caja */
+    flex-grow: 2;
+}
+
+
+/* SHRINK */
+.flexbox2{
+    background-color: #fff;
+    display: flex;
+    flex-flow: row;
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.flex__item1:first-child{
+    background-color: #f77;
+    /* La propiedad flex-shrink
+    hace que mis elementos que se 
+    encojan más en un caja */
+    flex-shrink: 0;
+}
+
+.flex__item1{
+    background-color: #800;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+    flex-shrink: 1;
+}
+
+
+.flex__item1:last-child{
+    background-color: #000;
+    flex-shrink: 0;
+}
+
+
+/* BASIS */
+.flexbox3{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    align-items: center;
+    justify-content:center;
+    /* Con la propiedad gap le doy separación 
+    a mis elementos dentro de mi caja madre */
+    gap: 20px;
+}
+
+.flex__item2:nth-child(2n){
+    background-color: #f77;
+}
+
+.flex__item2{
+    background-color: #800;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    direction: rtl;
+    /* Para avrebiar las trea es asi */
+    flex: /*flex-grow */1/* flex-shrik */ 1 /* flex.basis */200px;
+}
+
+
+.flex__item2:last-child{
+    background-color: #000;
+}
