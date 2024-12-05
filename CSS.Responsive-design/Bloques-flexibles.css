@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.bloque{
+    display: inline-block;
+    /* Las propiedades max-widht y min width
+    me permiten estirar la caja más del 100% 
+    de su tamño total o achicar */
+    min-width: 200px;
+    background-color: #6af;
+    margin: auto;
+    width: 100%;
+    flex:1;
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+}
