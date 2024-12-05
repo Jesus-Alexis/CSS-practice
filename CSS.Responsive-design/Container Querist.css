@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Al contenedor primero lo debo definir como 
+conteiner type */
+.container{
+    /* Aqui voy a poder condicionar las
+    propieades que tenga por su ancho */
+    container-type: inline-size;
+    /* Para dearle nombre a mis contenedores
+    se les da con la propiedad
+    container-name */
+    container-name: main ;
+}
+
+p{
+    font-size: 10px;
+}
+
+/* Si el tamaño maximo sea de 600px
+o  menos mi etiqueta p tendra un font-size(tamaño de letra) de
+20px y tendra los demás estilos*/
+@container main (max-width: 600px){
+    p{
+        font-size: 20px;
+        color: #f00;
+        background-color:#000 ;
+    }
+}

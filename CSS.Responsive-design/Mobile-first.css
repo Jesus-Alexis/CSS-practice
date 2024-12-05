@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+div,
+body,
+header,
+nav,
+ul,
+footer {
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.main-wrapper,
+header,
+footer {
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+/* HEADER */
+
+.header {
+  background-color: #d12;
+}
+
+.main-wrapper {
+  max-width: 1024px;
+  flex-direction: column;
+}
+
+.main-navbar ul {
+  justify-content: center;
+  display: flex;
+  padding: 0;
+}
+
+.main-navbar li {
+  list-style: none;
+  margin: 4px;
+}
+
+.main-navbar a {
+  color: #fff;
+  display: inline-block;
+  padding: 6px 9px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* MAIN SECCTION */
+
+.main-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+aside,
+main {
+  padding: 10px 20px;
+  flex-basis: 0;
+  background-color: #fff;
+}
+
+main {
+  min-width: 300px;
+  flex-grow: 2;
+}
+
+.main-wrapper aside {
+  flex-grow: 1;
+}
+
+.secundary-navbar ul {
+  padding: 0;
+}
+
+.secundary-navbar {
+  min-width: 200px;
+  text-align: center;
+}
+
+.secundary-navbar li {
+  list-style: none;
+}
+
+.secundary-navbar a {
+  color: #900a;
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+aside:last-child {
+  min-width: 10rem;
+  display: none;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: auto;
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mobile first */
+/* Aqui lo que se cambian son los valores
+ para el mediaquerist para que la pagina
+ se pueda adaptar primero a dispositivos
+ moviles */
+@media screen and (min-width: 480px) {
+  .main-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Si la pantalla tiene al menos
+800px si aplica el estilo al ultimo
+hijo de asside. */
+@media screen and (min-width: 800px) {
+  aside:last-child {
+    display: block;
+  }
+}

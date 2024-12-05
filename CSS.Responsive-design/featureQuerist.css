@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Aqui le estoy diciendo al navegador que 
+si soparta el estilo dsiplay grid
+se aplicara al body*/
+@supports(display: grid){
+    body{
+      display: grid;
+    }
+}
+
+/* Aqui le estoy diceindo al navegador que
+si no soparta el display grid utilece
+el display flex */
+@supports not(display:grid){
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}
