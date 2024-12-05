@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture, Source y Media</title>
+  </head>
+  <body>
+    <h1>Picture, source y Media</h1>
+    <h2>Picture</h2>
+    <p>
+      La etiqueta picture es importante cuando quiero que me cargue una sola
+      imagen y quiero que esa imagen se pueda ver bien en todas las pantallas.
+    </p>
+    <picture>
+      <!-- Con el atributo media sirve para darle a mi imagen
+         que aparezca solo si es de el tamaño de 600px -->
+      <source media="(max-width: 600px)" srcset="FOTO-Mediana.png" />
+      <source media="(max-width: 400px)" srcset="FOTO-Chica.png" />
+      <img src="Foto-perfil.jpg" alt="" />
+      <!-- En pocas palabras el sorce dentro de mi pictures
+       sirve para que si mi imagen lo soporta el equipo que lo
+       cargue si no no. -->
+    </picture>
+  </body>
+</html>

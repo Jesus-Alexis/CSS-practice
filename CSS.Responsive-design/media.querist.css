@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div,
+body {
+  box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+}
+
+
+.flex-item{
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid #f00;
+    flex-grow: 1;
+}
+
+
+
+/* Si la pantalla tiene 500px
+o menos se va a aplicar este estilo si no
+se queda con el mismo estilo. */
+@media screen and (max-width: 500px) {
+  .parrafo {
+    font-size: 30px;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* Si la pantalla tiene 500px o menos  
+se va a aplicar un drección de columnas
+en los flex-items.*/
+@media screen and (max-width: 500px) {
+  .flexbox {
+    flex-direction:column;
+  }
+}
