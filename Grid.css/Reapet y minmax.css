@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    /* Con la expresion repeat ya no tengo que
+    repetir los mismo valores 4 o más veces */
+    grid-template-columns:
+    /* La función minmax sirve para que los elementos
+    dentro de la caja padre se puedan hacer más chicos
+    si las medidas son de 300px y 500px  */
+    repeat(2, minmax(100px,300px)) 1fr;
+    /* Reapeat es una función que funciona
+    como una columna más pero me permite colocar
+    más valores sin la necedidad de estarlos repitiendo.*/
+    grid-template-rows: repeat(2,200px) 1fr; 
+}
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color:#fff;
+}

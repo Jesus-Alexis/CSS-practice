@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid{
+    display: grid;
+    height: 80vh;
+    /*el valor auto primero calcula todo el espacio 
+    que tiene que tener y lo que sobra se les da 
+    a las filas que tienen auto*/
+    grid-template-columns: 2fr 3fr 1fr;
+    /* Con el valor fr esta ocupando todo el ancho 
+    disponible en un grilla y a cada elemento
+    les da el ancho en mismos espacios iguales*/
+    grid-template-rows: auto auto; 
+}
+
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color:#fff;
+}
