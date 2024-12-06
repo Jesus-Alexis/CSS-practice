@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: sans-serif
+}
+
+body, div{
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 10px;
+    padding: 10px;
+    /*ESTA ES LA NUEVA PROPIEDAD EN GRID  */
+    justify-items: stretch;
+    /* Con el justify itmes se mueve el eje horizontal */
+    /* La dirección self start tiene en cuanta la
+    dirección del hijo y no del contendor
+    self-start, self-end */
+
+    justify-content: space-evenly;
+    /* Con el justify content se mueve el eje vertical */
+    /* La propiedad justify content: mueve
+    todos los elementos hijos dentro de la
+    misma celda */
+
+    align-items: stretch;
+    /* La propiedad aling items de igual manera
+    alinea los elementos de manera hrozintal */
+    align-content: space-around;
+    height: 350px;
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.grid-item:first-child{
+    /* Justify-self: se ocupa para
+    mover un elemento unico hijo 
+    al igual que aling-self*/
+    background-color: #e88;
+}
+
+.grid-item{
+    background-color: #48e;
+    color: #fff;
+    font-size: 30px;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-item:hover{
+    opacity: 0.74;
+}
