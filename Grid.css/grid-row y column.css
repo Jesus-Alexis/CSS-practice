@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+div,
+body {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-rows: repeat(200px, 1fr);
+  grid-auto-rows: 150px;
+  grid-auto-flow: row;
+  gap: 25px 30px;
+  width: 90vw;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.grid-item {
+  background-color: #48e;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.grid-item:first-child {
+  /* Aqui le estoy diciendo al navegador
+    que mi fila va a arrancar en mi columna y fila 
+    1 */
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  /* SPAN quiere decir que va a ocupar de 
+      más cledas o en este caso dos columnas más o 
+      2 filas más */
+
+  grid-column: 3 / span 2;
+  /* Para poner las dos propiedades en una sola
+    solo basta con ponerlo de esta forma */
+  /* Aqui le estoy diciendo al navegador que 
+    mis filas y columnas van a terminar en mi
+    fila y columna 3 */
+
+  background-image: url(spiderman2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax (150px, 1fr));
+  }
+}

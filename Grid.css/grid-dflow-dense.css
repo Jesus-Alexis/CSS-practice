@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  div,
+  body {
+    box-sizing: border-box;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: repeat(200px, 1fr);
+    grid-auto-rows: 150px;
+    /* Con el valor dense se rellenan los espacios que
+    se enecuentran vacios */
+    grid-auto-flow: dense;
+    gap: 25px 30px;
+    width: 90vw;
+    margin: auto;
+    margin-top: 30px;
+  }
+  
+  .grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    color: #000;
+    border-radius: 16px;
+    background-image: url(spiderman2.png);
+    background-size: cover;
+    background-position: top;
+  }
+
+  .grid-item:nth-child(10){
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  @media screen and (max-width: 500px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax (150px, 1fr));
+    }
+  }
