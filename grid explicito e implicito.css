@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: repeat(3, 
+  200px);
+  grid-template-rows: repeat(3, 200px);
+  /* Con el grid-auto-flow: sirve para que siga
+  la dirección de las colummnas o ya sea de
+  las filas */
+  grid-auto-flow: column;
+  
+  /*Aqui le estoy diciendo al navegador que las columnas
+  o rows (filas) que se creen implicitamente van a medir 100px */
+  grid-auto-rows: 150px;
+  grid-auto-columns: 100px;
+}
+
+.grid-item {
+  background-color: #48e;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
+}
