@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #888a;
+}
+
+div,
+body {
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+nav,
+header,
+footer,
+aside,
+main {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns:
+    minmax(250px, 1fr)
+    minmax(300px, 2fr) minmax(200px, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+  margin: auto;
+  gap: 10px;
+  padding: 10px;
+  /* Nueva propiedad */
+  grid-template-areas: 
+  "nav main aside";
+}
+
+.grid {
+  max-width: 1460px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #913f;
+  color: #fff;
+  border-color: #913f;
+  padding: 30px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+  min-width: 300px;
+  max-width: 700px;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+nav,
+aside {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+@media screen and (max-width: 880px) {
+    .grid{
+        grid-template-columns: minmax(230px, 1fr)
+        minmax(300px, 3fr);
+    }
+    nav, aside {
+        height: auto;
+        position: static;
+    }
+    aside{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "main"
+      "aside";
+  }
+}
+
