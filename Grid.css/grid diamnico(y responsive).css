@@ -9,10 +9,14 @@ div, body{
 
   .grid {
     display: grid;
-    /* El valor auto-fit ajusta las columnas que
-    son agregadas explicitamente */
-    grid-template-columns: repeat(auto-fit, 1fr);
+    /* El valor auto-fit ajusta las columnas 
+    de manera que se adapten a las pantallas 
+    de mi celular o de mi excritorio
+    */
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 150px;
+    grid-auto-flow: row;
     gap: 25px;
     width: 90vw;
     margin: auto;
@@ -21,8 +25,19 @@ div, body{
   
   .grid-item {
     background-color: #48e;
-    padding: 10px;
     font-size: 30px;
     color: #fff;
+    border-radius: 16px;
+  }
+
+  .grid-item:hover{
+    opacity: 0.74;
+  }
+
+  @media screen and (max-width:500px){
+    .grid{
+      grid-template-columns:repeat(auto-fill, minmax
+      (150px, 1fr));
+    }
   }
   
