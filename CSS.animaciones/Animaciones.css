@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+.resum{
+    box-sizing: border-box;
+    margin: 25px;
+    padding: 15px 0 15px 3rem ;
+    border: 2px solid #000;
+}
+
+.box{
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+}
+
+.barra{
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+
+    /* Con esta propieddad se le asigna 
+    nombre a mi elemento en html */
+    animation-name: llenar-barra;
+
+    /* Con esta propiedad se pone la
+    duracion de mi animación */
+    animation-duration: 1s;
+
+    /* Con esta propiedad le digo al navegador cuanto
+    tiempo debe tardar para hacer la animación */
+    animation-delay: 1s;
+
+    /* Con la esta propiedad se llena la animación
+     de manera completa */
+     animation-fill-mode: both;
+
+     /* Con esta propiedad puedo hacer que la 
+     animación se repita las veces que quiera */
+     animation-iteration-count: infinite;
+
+     /* Con esta propieddad se puede cambiar la 
+     dirección  alternarte es para que valla de 
+     adelante a atras y reverse seirve para que vaya
+     unicamente para atras*/
+     animation-direction: alternate;
+
+     /* Con esta propiedad puedo pausar la animación */
+     animation-play-state: paused;
+    }
+    
+    .barra:active {
+        /* Con este valor puedo hacer que la animación 
+        siga */
+        animation-play-state: running;
+}
+
+
+
+/* @KEYFRAMES  */
+
+/* Sirve para crear animaciones */
+@keyframes llenar-barra {
+    /* Aqui en la condicion le estoy diciendo que 
+    mi elemento arrancara con 0% y terminara
+    con 100% */
+    form  {
+        width: 10%;
+    }  
+    to {
+        width: 81.2%;
+        background-color: #f33;
+    }
+}
