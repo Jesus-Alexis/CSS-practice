@@ -31,7 +31,11 @@ se queda con el mismo estilo. */
     background-color: #000;
     color: #fff;
   }
+  /* Esta condición solo se usa para pantallas de
+  celular si lo quiero para celulares 
+  primero debo utilizar el min-width */
 }
+
 
 /* Si la pantalla tiene 500px o menos  
 se va a aplicar un drección de columnas
