@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #222;
+  /* #222 */
+}
+
+.wrapper-container{
+    background-color: #c34f;
+}
+
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 6rem;
+}
+
+
+/*------- WAVE BUTTON------ */
+
+.btn {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  /* LETTER-SPACING:  PARA HACER ESPACIO
+    ENTRE LAS LETRAS EN UNA PALABRA (P A L A B R A) */
+  letter-spacing: 3px;
+  position: absolute;
+}
+
+.btn-1 {
+    font-size: 15px;
+    border: 1.5px solid #fff;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn-1::before {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 140%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    transition: top 0.6s, left 0.6s;
+    border-radius: 50%;
+    top: 100%;
+    left: 30%;
+}
+
+.btn-1:hover::before {
+    top: -35%;
+    left: -20%;
+}
+.btn:hover{
+    color: #223;
+    border: 1.5px solid #222;
+}
+
+/* BOTTON MODIFICADO */
+.btna {
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 6px;
+    /* LETTER-SPACING:  PARA HACER ESPACIO
+      ENTRE LAS LETRAS EN UNA PALABRA (P A L A B R A) */
+    letter-spacing: 3px;
+    position: absolute;
+  }
+
+.btn-3 {
+    font-size: 15px;
+    border: 1.5px solid #fff;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn-3::before {
+    content: "";
+    background-color: #c34f;
+    display: block;
+    width: 140%;
+    height: 200%;
+    position: absolute;
+    z-index: -1;
+    transition: top 0.6s, left 0.6s;
+    border-radius: 50%;
+    top: 100%;
+    left: 30%;
+}
+
+.btn-3:hover::before {
+    top: -35%;
+    left: -20%;
+}
+
+/*------- NEON BUTTON------ */
+
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 6rem;
+}
+
+.button-container:has(.btn-2) {
+    filter: drop-shadow(0px 0px 15px #c34f),
+    drop-shadow(0px 0px 4px #c34f);
+}
+
+.btn-2 {
+  border: 1px solid #fff3;
+  color: #fff3;
+}
+
+.btn-2:hover {
+  animation: parpadear 2s infinite alternate backwards;
+}
+
+@keyframes parpadear {
+  0% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  25% {
+    border-color: #c34f;
+    color: #c3555f;
+    box-shadow: 0px 0px 6px #48e3, 0px 0px 16px #48e3;
+    text-shadow: 0px 0px 9px #c34f, 0px 0px 3px #c3555f;
+  }
+  30% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  35% {
+    color: #c3555f;
+    text-shadow: 0px 0px 9px #c34f, 0px 0px 3px #c3555f;
+  }
+  46% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  60% {
+    border-color: #c34f;
+    box-shadow: 0px 0px 6px #48e3, 0px 0px 16px #48e3;
+  }
+  
+
+  78% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+
+  100% {
+    border-color: #c34f;
+    color: #c3555f;
+    text-shadow: 0px 0px 9px #c34f, 0px 0px 3px #c3555f;
+  }
+}
