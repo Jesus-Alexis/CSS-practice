@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.crecedor{
+    height: 100vh;
+}
+
+.box{
+    height: 400px;
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation:llenar-barra;
+    /* Con la propiedad animation-fill: both 
+    puedo hacer que mi animación inicie desde 0% */
+    animation-fill-mode: both;
+    
+    /* El valor view hace que la animacion
+    comience al borde de la pagina y desaparezca 
+    una vez llegando al borde de arriba */
+    animation-timeline: --cajita;
+    animation-timing-function: linear;
+    /* Propiedad para hacer que mi animación
+    inicie un poco déspues */
+    animation-range-start: cover -10%;
+    animation-range-end: contain 50%;
+}
+
+@keyframes llenar-barra {
+    form{
+        opacity: 0%;
+    }
+}
