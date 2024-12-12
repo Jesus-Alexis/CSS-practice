@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+}
+
+.container{
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: first baseline;
+}
+
+.box {
+  background-color: #10232f;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion blur sirve para desenfocar 
+    las cosas que se encuentran dentro de mi caja
+    en este caso es como youtube cuando selecciono
+    un video todo lo que esta detras se desenfoca*/
+  filter: blur(5px);
+}
+
+.box2 {
+  background-color: #48e;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion brigthness sirve 
+    para aunmentar el brillo o disminuir 
+    el fondo de mi elemento div o imagen*/
+  filter: brightness(1.2);
+}
+
+.box3 {
+  background-color: #48e;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion contraste hace que 
+    los colores claros sena más claros
+    y que los colores oscuros sean más 
+    oscuros*/
+  filter: contrast(0.5);
+}
+
+.box4 {
+  background-color: #48e;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion grayscale, sirve para
+    volver a la imagen de un color más grisaseo*/
+  filter: grayscale(10);
+}
+.box5{
+  background-color: #48e;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion saturete aumenta la intensidad de
+los colores en mi imagen */
+  filter: saturate(200);
+}
+
+.box6{
+  background-color: #48e;
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion hue-rotate sirve para cambiar el 
+  color de la matris*/
+  filter: hue-rotate(280deg);
+}
+
+.box7{
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion opacity sirve para que se pueda 
+  cambiar la opacidad de mi imagen o elemento*/
+  filter: opacity(.6);
+  border: 4px solid #000;
+}
+
+.box8{
+  margin: auto;
+  padding: 20px 50px;
+  /* La funcion Invert, invierte los colores*/
+  filter: Invert(.9);
+  border: 4px solid #000;
+}
+
+.container2{
+    display: flex;
+}
+
+.box9{
+    margin: auto;
+    padding: 20px 50px;
+    /* La funcion backdrop filter sirve para
+    que se pueda colocar un logo o imagen y se le puedan
+    agregar más funciones */
+    backdrop-filter: saturate(15);
+    position: absolute;
+    left: 200px;
+}
+
+.fondo{
+    max-width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 0px 15px #000);
+}
