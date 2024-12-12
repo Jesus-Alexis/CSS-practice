@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #48e;
+}
+
+h1{
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    /* La propiedad scale cambia las propidedes
+    del elemento los puede hacer más grandes o más 
+    chicos a la funcion scale se le pueden asignar 
+    dos paramaetros uno para el eje X y el otro para
+    el eje Y */
+    scale: 3 5;
+}
+
+.box {
+    margin: auto;
+    padding: 20px 50px;
+    border: 4px solid #000;
+    margin: auto;
+    padding: 20px 50px;
+}
+
+
+.box:nth-child(2) {
+  margin: auto;
+  padding: 20px 50px;
+  border: 4px solid #000;
+  margin: auto;
+  /* Funcion rotate */
+  transform: rotate(20deg);
+  padding: 20px 50px;
+}
+
+
+.box:last-child {
+  margin: auto;
+  padding: 20px 50px;
+  border: 4px solid #000;
+  margin: auto;
+  /* Funcion Skew */
+  transform: skew(20deg);
+  padding: 20px 50px;
+}
