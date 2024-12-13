@@ -1,0 +1,60 @@
+/* Aqui puedo definir directamente mis 
+variables para toda la pagina. */
+:root{
+    --color-secundario:#44f;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+    --tamaño-principal:2.4rem;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+  
+  .box {
+    /* ----VARIABLE---- */
+    /* background-color: var(--color-principal); */
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: 30px;
+    padding: 0 40px;
+    font-size: clamp(var(--tamaño-principal), 2.2vw, 4rem);
+    border: 6px solid #000;
+  }
+
+  .box:first-child {
+    background-color: var(--color-secundario);
+  }
+  
+  .box:nth-child(2){
+    color: var(--color-principal);
+    border: 6px solid var(--color-principal);
+  }
+
+  .box p{
+    --color-texto:#4f4;
+    color: var(--color-texto);
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  body > p{
+    color: var(--color-secundario);
+    font-size: 60px;
+  }
+
+  @property --color-principal {
+    /* Aqui lo que le estoy diciendo es que va a 
+    esperar un color */
+    syntax: "<color>" ;
+    inherits: false;
+    initial-value: #48e;
+  }
