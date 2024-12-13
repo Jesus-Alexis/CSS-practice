@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.box {
+  background-color: #48e;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin: 120px auto;
+  font-size: 30px;
+  padding: 0 40px;
+  /* La funcion min  escoge el valor
+   más chico de los dos que se le haya asignado.*/
+  width: min(900px, 100%);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.box2 {
+  background-color: #493e;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin: 120px auto;
+  font-size: 30px;
+  padding: 0 40px;
+  /* La función max se queda con
+  el valor más grande de los valores 
+  que se le asignen internamente*/
+  width: max(900px, 100%);
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+.box3 {
+  background-color: #922e;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin: 120px auto;
+  font-size: 30px;
+  padding: 0 40px;
+  /* La función clamp sirve para
+  pasar primero el valor minimo es
+  800px
+  el segundo es el valor ideal 
+  100%
+  y 
+  por ultimo el valor maximo
+  es de
+  1600px*/
+  width: clamp(800px,100%, 1600px);
+  border: 6px solid #000;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
