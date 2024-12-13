@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    font-size: 30px;
+    padding: 0 40px;
+    border: 2px solid #f44;
+}
+
+p::first-letter{
+    /* Esta propiedad hace que la primera letra 
+    de mi texto sea la más grande */
+    initial-letter: 3 2;
+    padding: 10px;
+    padding-bottom: 0;
+    color: #f44;
+    font-family: cursive;
+}
