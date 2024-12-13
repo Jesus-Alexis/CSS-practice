@@ -12,8 +12,8 @@ body{
     padding: 0 40px;
     border: 2px solid #f44;
     /* Ahora las unidades de medidad
-    son dhv o dhw para que se hagan resposive */
-    height: 100dvh;
+    son dhv o dvw para que se hagan resposive */
+    height: 90dvh;
 }
 
 p::first-letter{
