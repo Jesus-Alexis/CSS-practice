@@ -29,7 +29,6 @@ img{
     padding: 20px 50px;
     border: 4px solid #000;
     margin: auto;
-    padding: 20px 50px;
 }
 
 
@@ -40,7 +39,21 @@ img{
   margin: auto;
   /* Funcion rotate */
   transform: rotate(20deg);
-  padding: 20px 50px;
+}
+
+.box:nth-child(3) {
+  margin-right: auto;
+  border: 4px solid #000;
+  margin: auto;
+  /* Funcion rotate */
+  transform: rotate(20deg);
+  /* Funcion translate */
+  translate: 200px;
+}
+
+.box:nth-child(3):hover {
+    transform: skew(20deg);
+    transition: transform .6s;
 }
 
 
@@ -48,8 +61,6 @@ img{
   margin: auto;
   padding: 20px 50px;
   border: 4px solid #000;
-  margin: auto;
   /* Funcion Skew */
   transform: skew(20deg);
-  padding: 20px 50px;
 }
