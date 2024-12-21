@@ -3,9 +3,11 @@
   }
   
   body{
-    background-color: var(--bg-color);
+    background-image: url(fondo.gif);
+    background-position:center;
+    background-size: cover;
     --bg-color: color-mix(in srgb, #f62 70%, #fff);
-    --card-color: #fff;
+    --text-color: #333;
     --card-bg-color: #fff6;
     --dark-color: #f62;
     font-family: sans-serif; 
@@ -27,9 +29,9 @@
   }
 
   header{
-    min-height: 100dvh;
     display: flex;
     justify-content: center;
+    mix-blend-mode: difference;
   }
 
   .text-container{
@@ -38,36 +40,46 @@
     top: 0;
     display: flex;
     font-size:clamp(1rem, 8vw, 6rem);
-    color: #444;
     font-weight: 700;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 2dvw;
+    padding: 3dvw;
+    mix-blend-mode: difference;
+    color: var(--text-color);
+    animation: aparecer-texto both;
+    animation-timeline: scroll();
+    animation-range: cover 20%;
+  }
+
+  .right-text{
+    font-weight: 900;
   }
 
   .left-text{
     color: var(--dark-color);
     padding-left: 4dvw;
+    filter:drop-shadow(0px 0px 1px var(--dark-color))
+    drop-shadow(0px 0px 9px var(--dark-color));
   }
 
+
   img{
-    mix-blend-mode: screen;
     filter: grayscale();
     position: fixed;
     top: 0;
     animation: aparecer both;
     animation-timeline: scroll();
     max-height: 100dvh;
+    mix-blend-mode: darken;
   }
 
   @keyframes aparecer {
     0%{
         opacity: 0;
-        meix-blend-mode: saturarion;
         filter: grayscale();
         translate:  0 -20%;
-        scale: .8;
+        scale: 1.2;
     }
 
     100%{
@@ -75,5 +87,25 @@
         filter: grayscale();
         translate: 0 0 ;
         scale: 1;
+    }
+  }
+
+  @keyframes aparecer-texto {
+    0%{
+        opacity: 0;
+        translate:  0 -20%;
+        scale: 1.2;
+    }
+
+    100%{
+        opacity: 1;
+        translate: 0 0 ;
+        scale: 1;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .text-container{
+        justify-content: space-evenly;
     }
   }
